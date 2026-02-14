@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BillFeast - A complete restaurant operations system for stock, expenses, and profit tracking. Manage single or multi-outlet restaurants with ease.">
+    <meta name="keywords" content="restaurant management, stock tracking, expense management, restaurant software, profit tracking">
+    <title>BillFeast - Restaurant Operations System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased" style="font-family: 'Inter', sans-serif;">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-lg border-b border-gray-100 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="#" class="text-xl font-semibold tracking-tight text-gray-900">BillFeast</a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#features" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Features</a>
+                    <a href="#who-its-for" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Who It's For</a>
+                    <a href="#contact" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+                </div>
+                <a href="#contact" class="bg-gray-900 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">Book a Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 text-sm font-medium px-4 py-2 rounded-full mb-8">
+                <iconify-icon icon="solar:chart-2-linear" width="18" height="18" style="stroke-width: 1.5;"></iconify-icon>
+                <span>Trusted by 5+ active restaurant brands</span>
+            </div>
+            <h1 class="sm:text-5xl lg:text-6xl text-4xl font-semibold text-gray-900 tracking-tight mb-6">
+                Run your restaurant<br class="hidden sm:block"> like a real business
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                A complete operations system for stock, expenses, and profit tracking. Know exactly where your money goes.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto bg-gray-900 text-white font-medium px-8 py-4 rounded-xl hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
+                    <iconify-icon icon="solar:calendar-linear" width="20" height="20" style="stroke-width: 1.5;"></iconify-icon>
+                    Book a Demo
+                </a>
+                <a href="https://wa.me/918106248423" target="_blank" class="w-full sm:w-auto bg-emerald-600 text-white font-medium px-8 py-4 rounded-xl hover:bg-emerald-700 transition-colors flex items-center justify-center gap-2">
+                    <iconify-icon icon="solar:chat-round-dots-linear" width="20" height="20" style="stroke-width: 1.5;"></iconify-icon>
+                    WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-gradient-to-b from-gray-50 to-gray-100 rounded-2xl p-4 sm:p-8 border border-gray-200">
+                <div class="bg-white rounded-xl shadow-xl border border-gray-200 overflow-hidden">
+                    <div class="flex items-center gap-2 px-4 py-3 border-b border-gray-100">
+                        <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                    </div>
+                    <div class="p-6 sm:p-8">
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+                            <div class="bg-gray-50 rounded-lg p-4">
+                                <p class="text-xs text-gray-500 mb-1">Today's Sales</p>
+                                <p class="text-xl font-semibold text-gray-900">₹45,230</p>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4">
+                                <p class="text-xs text-gray-500 mb-1">Stock Value</p>
+                                <p class="text-xl font-semibold text-gray-900">₹2.4L</p>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4">
+                                <p class="text-xs text-gray-500 mb-1">Monthly Expense</p>
+                                <p class="text-xl font-semibold text-gray-900">₹8.5L</p>
+                            </div>
+                            <div class="bg-emerald-50 rounded-lg p-4">
+                                <p class="text-xs text-emerald-600 mb-1">Net Profit</p>
+                                <p class="text-xl font-semibold text-emerald-600">₹1.2L</p>
+                            </div>
+                        </div>
+                        <div class="h-32 bg-gradient-to-r from-emerald-100 via-emerald-50 to-gray-50 rounded-lg flex items-end justify-around px-4 pb-4">
+                            <div class="w-8 bg-emerald-400 rounded-t" style="height: 40%;"></div>
+                            <div class="w-8 bg-emerald-400 rounded-t" style="height: 60%;"></div>
+                            <div class="w-8 bg-emerald-400 rounded-t" style="height: 45%;"></div>
+                            <div class="w-8 bg-emerald-400 rounded-t" style="height: 80%;"></div>
+                            <div class="w-8 bg-emerald-400 rounded-t" style="height: 65%;"></div>
+                            <div class="w-8 bg-emerald-400 rounded-t" style="height: 90%;"></div>
+                            <div class="w-8 bg-emerald-500 rounded-t" style="height: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For -->
+    <section id="who-its-for" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 mb-4">Built for every restaurant</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">“Built from real restaurant workflows”.
+                “Designed to reduce wastage &amp; chaos”.
+                Whether you run one outlet or manage a chain, BillFeast scales with your business.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-6">
+                        <iconify-icon icon="solar:shop-2-linear" width="24" height="24" class="text-orange-600" style="stroke-width: 1.5;"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold tracking-tight text-gray-900 mb-3">Single Outlet Restaurants</h3>
+                    <p class="text-gray-600">Perfect for standalone restaurants wanting to track stock, expenses, and profits in one place.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <iconify-icon icon="solar:buildings-2-linear" width="24" height="24" class="text-blue-600" style="stroke-width: 1.5;"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold tracking-tight text-gray-900 mb-3">Multi-Outlet Chains</h3>
+                    <p class="text-gray-600">Manage multiple outlets with centralized warehouse system and outlet-wise stock transfers.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                        <iconify-icon icon="solar:graph-up-linear" width="24" height="24" class="text-purple-600" style="stroke-width: 1.5;"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold tracking-tight text-gray-900 mb-3">Growing Brands</h3>
+                    <p class="text-gray-600">Scale confidently with detailed reports and insights that help you make better decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 mb-4">Everything you need to manage operations</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Four powerful modules working together to give you complete control over your restaurant.</p>
+            </div>
+
+            <!-- Stock Management -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                        <iconify-icon icon="solar:box-linear" width="22" height="22" class="text-emerald-600" style="stroke-width: 1.5;"></iconify-icon>
+                    </div>
+                    <h3 class="text-2xl font-semibold tracking-tight text-gray-900">Stock Management</h3>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <iconify-icon icon="solar:add-circle-linear" width="24" height="24" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="font-medium text-gray-900 mb-2">New Stock Added</h4>
+                        <p class="text-sm text-gray-600">Record all incoming inventory with purchase details and costs.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <iconify-icon icon="solar:chef-hat-linear" width="24" height="24" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="font-medium text-gray-900 mb-2">Kitchen Consumption</h4>
+                        <p class="text-sm text-gray-600">Track what goes into your kitchen and reduce wastage.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <iconify-icon icon="solar:transfer-horizontal-linear" width="24" height="24" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="font-medium text-gray-900 mb-2">Warehouse Transfers</h4>
+                        <p class="text-sm text-gray-600">Move stock from warehouse to outlets seamlessly.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <iconify-icon icon="solar:inbox-in-linear" width="24" height="24" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="font-medium text-gray-900 mb-2">Stock Received</h4>
+                        <p class="text-sm text-gray-600">Outlets can confirm receipt and track discrepancies.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <iconify-icon icon="solar:calendar-mark-linear" width="24" height="24" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="font-medium text-gray-900 mb-2">Opening &amp; Closing Stock</h4>
+                        <p class="text-sm text-gray-600">Daily stock records for complete inventory accuracy.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="font-medium text-gray-900 mb-2">Live Stock Value</h4>
+                        <p class="text-sm text-gray-600">Real-time view of available stock and its total value.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vendor Management -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                        <iconify-icon icon="solar:users-group-two-rounded-linear" width="22" height="22" class="text-blue-600" style="stroke-width: 1.5;"></iconify-icon>
+                    </div>
+                    <h3 class="text-2xl font-semibold tracking-tight text-gray-900">Vendor Management</h3>
+                </div>
+                <div class="grid sm:grid-cols-3 gap-4">
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <iconify-icon icon="solar:cart-large-2-linear" width="24" height="24" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="font-medium text-gray-900 mb-2">Purchase Tracking</h4>
+                        <p class="text-sm text-gray-600">Record every purchase with vendor details and invoice numbers.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <iconify-icon icon="solar:wallet-money-linear" width="24" height="24" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="font-medium text-gray-900 mb-2">Vendor Payments</h4>
+                        <p class="text-sm text-gray-600">Track payments made and maintain clear payment history.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <iconify-icon icon="solar:clipboard-text-linear" width="24" height="24" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="font-medium text-gray-900 mb-2">Outstanding Balances</h4>
+                        <p class="text-sm text-gray-600">Know exactly how much you owe each vendor at any time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expense Management -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                        <iconify-icon icon="solar:bill-list-linear" width="22" height="22" class="text-orange-600" style="stroke-width: 1.5;"></iconify-icon>
+                    </div>
+                    <h3 class="text-2xl font-semibold tracking-tight text-gray-900">Expense Management</h3>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <iconify-icon icon="solar:notes-linear" width="24" height="24" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="font-medium text-gray-900 mb-2">Daily Expenses</h4>
+                        <p class="text-sm text-gray-600">Miscellaneous daily expenses like transport, supplies, etc.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <iconify-icon icon="solar:home-2-linear" width="24" height="24" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="font-medium text-gray-900 mb-2">Fixed Monthly Costs</h4>
+                        <p class="text-sm text-gray-600">Rent, electricity, maintenance and other recurring costs.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <iconify-icon icon="solar:user-id-linear" width="24" height="24" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="font-medium text-gray-900 mb-2">Employee Salaries</h4>
+                        <p class="text-sm text-gray-600">Track staff salaries, advances, and payment schedules.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <iconify-icon icon="solar:document-text-linear" width="24" height="24" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="font-medium text-gray-900 mb-2">Taxes &amp; Statutory</h4>
+                        <p class="text-sm text-gray-600">GST, licenses, permits and compliance expenses.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <iconify-icon icon="solar:case-round-linear" width="24" height="24" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="font-medium text-gray-900 mb-2">Professional Services</h4>
+                        <p class="text-sm text-gray-600">CA fees, legal expenses, consultants and advisors.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reports & Insights -->
+            <div>
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                        <iconify-icon icon="solar:chart-square-linear" width="22" height="22" class="text-purple-600" style="stroke-width: 1.5;"></iconify-icon>
+                    </div>
+                    <h3 class="text-2xl font-semibold tracking-tight text-gray-900">Reports &amp; Insights</h3>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-8 text-white">
+                        <iconify-icon icon="solar:pie-chart-2-linear" width="32" height="32" class="text-gray-400 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="text-lg font-medium mb-2">Monthly Expense Report</h4>
+                        <p class="text-gray-400">Complete breakdown of expenses per outlet. Understand where every rupee is going.</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-xl p-8 text-white">
+                        <iconify-icon icon="solar:graph-new-linear" width="32" height="32" class="text-emerald-200 mb-4" style="stroke-width: 1.5;"></iconify-icon>
+                        <h4 class="text-lg font-medium mb-2">Net Profit Report</h4>
+                        <p class="text-emerald-100">Sales minus all expenses. Know your actual profit every month with clarity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-2xl mb-8">
+                <iconify-icon icon="solar:verified-check-linear" width="32" height="32" class="text-emerald-600" style="stroke-width: 1.5;"></iconify-icon>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 mb-4">Trusted by real restaurants</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">Currently used by some active restaurant brands managing their daily operations with BillFeast.</p>
+            <div class="flex flex-wrap items-center justify-center gap-8">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <span class="text-sm font-semibold text-gray-600">M36</span>
+                    </div>
+                    <span class="text-gray-600">Mandi@36</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <span class="text-sm font-semibold text-gray-600">BK</span>
+                    </div>
+                    <span class="text-gray-600">Biryani Kitchen</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <span class="text-sm font-semibold text-gray-600">CF</span>
+                    </div>
+                    <span class="text-gray-600">Cafe Fresh</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <span class="text-sm font-semibold text-gray-600">TD</span>
+                    </div>
+                    <span class="text-gray-600">Tandoor Delights</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <span class="text-sm font-semibold text-gray-600">SC</span>
+                    </div>
+                    <span class="text-gray-600">Spice Corner</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 rounded-3xl p-8 sm:p-12 lg:p-16">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-white mb-4">Ready to take control of your restaurant?</h2>
+                        <p class="text-lg text-gray-400 mb-8">Book a free demo and see how BillFeast can help you track stock, manage expenses, and grow profits.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3 text-gray-300">
+                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-emerald-400" style="stroke-width: 1.5;"></iconify-icon>
+                                <span>Free demo &amp; onboarding</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-gray-300">
+                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-emerald-400" style="stroke-width: 1.5;"></iconify-icon>
+                                <span>Reasonable Subscription Prices</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-gray-300">
+                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-emerald-400" style="stroke-width: 1.5;"></iconify-icon>
+                                <span>Get started in minutes</span>
+                            </div>
+                        </div>
+                        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                            <a href="https://wa.me/918106248423" target="_blank" class="bg-emerald-600 text-white font-medium px-6 py-3 rounded-xl hover:bg-emerald-700 transition-colors flex items-center justify-center gap-2">
+                                <iconify-icon icon="solar:chat-round-dots-linear" width="20" height="20" style="stroke-width: 1.5;"></iconify-icon>
+                                WhatsApp Us
+                            </a>
+                            <a href="mailto:mafhhtechnologiess@gmail.com" class="bg-white/10 text-white font-medium px-6 py-3 rounded-xl hover:bg-white/20 transition-colors flex items-center justify-center gap-2">
+                                <iconify-icon icon="solar:letter-linear" width="20" height="20" style="stroke-width: 1.5;"></iconify-icon>
+                                Email Us
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 rounded-2xl p-6 sm:p-8 backdrop-blur">
+                        <h3 class="text-xl font-semibold text-white mb-6">Book a Demo</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-sm text-gray-400 mb-2">Your Name</label>
+                                <input type="text" placeholder="Enter your name" class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-sm text-gray-400 mb-2">Restaurant Name</label>
+                                <input type="text" placeholder="Enter restaurant name" class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-sm text-gray-400 mb-2">WhatsApp Number</label>
+                                <input type="tel" placeholder="+91 98765 43210" class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-sm text-gray-400 mb-2">Email Address</label>
+                                <input type="email" placeholder="you@restaurant.com" class="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 transition-colors">
+                            </div>
+                            <button type="submit" class="w-full bg-white text-gray-900 font-medium px-6 py-3 rounded-xl hover:bg-gray-100 transition-colors mt-2">
+                                Request Demo
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <a href="#" class="text-xl font-semibold tracking-tight text-gray-900">BillFeast</a>
+                    <p class="text-sm text-gray-500 mt-1">A complete restaurant operations system</p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center gap-6 text-sm text-gray-600">
+                    <a href="mailto:mafhhtechnologiess@gmail.com" class="flex items-center gap-2 hover:text-gray-900 transition-colors">
+                        <iconify-icon icon="solar:letter-linear" width="18" height="18" style="stroke-width: 1.5;"></iconify-icon>
+                        mafhhtechnologiess@gmail.com
+                    </a>
+                    <a href="https://wa.me/918106248423" target="_blank" class="flex items-center gap-2 hover:text-gray-900 transition-colors">
+                        <iconify-icon icon="solar:chat-round-dots-linear" width="18" height="18" style="stroke-width: 1.5;"></iconify-icon>
+                        +91 8106248423
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-100 text-center text-sm text-gray-500">
+                <p>© 2026 BillFeast. A Product of MAFHH Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>
